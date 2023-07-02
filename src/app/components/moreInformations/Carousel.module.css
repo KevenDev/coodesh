@@ -1,0 +1,51 @@
+.containerCarousel {
+  position: relative;
+}
+
+.sectionCarousel {
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+.carousel {
+  --slide-spacing: 0.5rem;
+  --slide-size: 80%;
+  --slide-height: 10rem;
+}
+.carouselViewport {
+  overflow: hidden;
+}
+.carouselImgContainer {
+  backface-visibility: hidden;
+  display: flex;
+  touch-action: pan-y;
+  flex-direction: row;
+  height: auto;
+  margin-left: calc(var(--slide-spacing) * -1);
+}
+
+.carouselSlide {
+  flex: 0 0 var(--slide-size);
+  min-width: 0;
+  padding-left: var(--slide-spacing);
+  position: relative;
+}
+.carouselSlideText {
+  display: block;
+  height: var(--slide-height);
+  width: 100%;
+  background-color: white;
+  padding: 0.5rem;
+  font-size: 0.875rem;
+  border-radius: 10px;
+  color: #333333;
+}
+
+.author {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  text-align: end;
+  font-size: 0.75rem;
+  padding: 0 0.5rem;
+}

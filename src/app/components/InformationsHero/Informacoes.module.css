@@ -1,0 +1,123 @@
+.containerInformation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttonInformation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2.5rem;
+  background-color: #c5af19;
+  border-radius: 5px;
+  margin-top: 0.625rem;
+  cursor: pointer;
+  width: 95%;
+}
+
+.buttonInformation button {
+  border: none;
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 700;
+  background: transparent;
+  letter-spacing: 1px;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.icons img {
+  width: 3rem;
+  height: 3rem;
+}
+
+.informationsIcon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.informationsIcon :nth-child(2) {
+  color: white;
+  font-size: 0.75rem;
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+.textInformation {
+  width: 20rem;
+  text-align: center;
+  margin-top: 2rem;
+  color: white;
+}
+
+.buttonQuestions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2.5rem;
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 5px;
+  margin-top: 2.5rem;
+  cursor: pointer;
+  width: 95%;
+}
+
+.buttonQuestions button {
+  border: none;
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 700;
+  background: transparent;
+  letter-spacing: 1px;
+}
+
+.textAppeal {
+  text-align: center;
+  margin-top: 2.5rem;
+  color: white;
+  width: 90%;
+}
+
+.textAppeal :nth-child(2) {
+  text-align: center;
+  margin-top: 1rem;
+  color: #858479;
+  font-size: 0.875rem;
+}
+
+.iconsSucess {
+  display: flex;
+  width: 95%;
+  padding: 1rem;
+  justify-content: space-between;
+}
+
+.iconSettings {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.iconSettings img {
+  width: 2rem;
+  height: 2rem;
+}
+
+.iconSettings span {
+  font-size: 0.875rem;
+  text-align: center;
+  margin-top: 0.3rem;
+  color: white;
+}
