@@ -1,14 +1,39 @@
 .containerHighlights {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   margin-top: 1.375rem;
-  padding: 0 1rem 0 1rem;
+  @media (min-width: 1024px) {
+    margin-top: 2.5rem;
+  }
 }
 
-.title {
+.title h3 {
   color: white;
   text-align: center;
+  font-weight: 400;
+
+  @media (min-width: 1024px) {
+    display: none;
+  }
+}
+
+.titleDesktop h2 {
+  display: none;
+  font-size: 1rem;
+  color: #d8d7ce;
+  text-align: center;
+  font-weight: 400;
+  letter-spacing: 2px;
+  @media (min-width: 1024px) {
+    display: flex;
+    font-size: 1rem;
+  }
+  @media (min-width: 1440px) {
+    font-size: 1.75rem;
+  }
 }
 
 .courses {
@@ -16,6 +41,20 @@
   flex-direction: column;
   display: flex;
   color: #858479;
+  padding: 0 1rem 0 1rem;
+  @media (min-width: 1024px) {
+    display: none;
+  }
+}
+
+.coursesDesktop {
+  display: none;
+  @media (min-width: 1024px) {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 65.56%;
+  }
 }
 
 .courseInfo {
@@ -24,6 +63,43 @@
   justify-content: space-between;
   align-items: center;
   padding-top: 0.9rem;
+}
+
+.courseInfoDesktop {
+  @media (min-width: 1024px) {
+    display: flex;
+    padding: 1rem;
+  }
+}
+
+.contentDesktop {
+  @media (min-width: 1024px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+.courseInfoDesktop span {
+  @media (min-width: 1024px) {
+    font-size: 2.25rem;
+    color: #858479;
+  }
+}
+
+.courseInfoDesktop p {
+  @media (min-width: 1024px) {
+    line-height: 1.5rem;
+    color: #858479;
+  }
+}
+
+.courseInfoDesktop h3 {
+  @media (min-width: 1024px) {
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: start;
+  }
 }
 
 .courseInfo span {
@@ -51,7 +127,8 @@
   border-radius: 5px;
   margin-top: 1rem;
   cursor: pointer;
-  width: 100%;
+
+  width: 95%;
 }
 
 .buttonSeePrograms button {
@@ -69,6 +146,7 @@
   justify-content: center;
   align-items: center;
   margin-top: 1.5rem;
+  padding: 0 1rem 0 1rem;
 }
 
 .classification {

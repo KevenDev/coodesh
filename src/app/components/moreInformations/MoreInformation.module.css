@@ -12,6 +12,7 @@
   line-height: 20px;
   margin-top: 2rem;
   text-align: center;
+  font-weight: 400;
 }
 
 .form {
@@ -100,4 +101,55 @@
   line-height: 20px;
   margin-top: 2.5rem;
   text-align: center;
+  font-weight: 400;
+}
+
+.containerMoreCourses {
+  margin-top: 2.0625rem;
+  padding: 0 1rem 0 1rem;
+  font-size: 1rem;
+}
+
+.titleMoreCourses h3 {
+  color: white;
+  text-align: center;
+}
+
+.containerImages {
+  margin-top: 0.625rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.images2Adjusts {
+  margin-top: 0.5rem;
+  height: 10rem;
+}
+
+.images1Adjusts {
+  height: 10rem;
+}
+
+.names {
+  position: relative;
+  bottom: 45px;
+  left: 0.5rem;
+}
+
+.names h3 {
+  color: white;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.names h4 {
+  color: #666666;
+  font-weight: 400;
+  font-size: 0.75rem;
+}
+
+.names span {
+  color: #999999;
+  font-weight: 700;
 }

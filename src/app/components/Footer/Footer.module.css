@@ -1,0 +1,106 @@
+.containerFooter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2.5625rem;
+}
+
+.sectionCommunity {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.titleFooter h3 {
+  color: white;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.iconsFooter {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+}
+
+.sectionQuestions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2.375rem;
+}
+
+.questions {
+  font-size: 0.75rem;
+  color: white;
+}
+
+.contactWhatsapp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.25rem;
+  align-items: center;
+  height: 2.5rem;
+  width: 80%;
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 5px;
+  margin-top: 0.625rem;
+  cursor: pointer;
+}
+
+.contactWhatsapp button {
+  border: none;
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 700;
+  background: transparent;
+  letter-spacing: 1px;
+}
+
+.bodyFooter {
+  width: 100%;
+  padding: 0 0.5rem 0 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2.5rem;
+}
+
+.bodyFooter img {
+  width: 2.9175rem;
+  height: 0.75rem;
+}
+
+.typeMoney {
+  display: flex;
+  gap: 0.875rem;
+}
+
+.typeMoney p {
+  color: white;
+  font-size: 0.65rem;
+  font-weight: 700;
+}
+
+.typeMoney span {
+  color: #858479;
+  font-size: 0.65rem;
+  font-weight: 700;
+}
+
+.finishFooter {
+  width: 100%;
+  padding: 0 0.5rem 0.75rem 0.5rem;
+  margin-top: 0.875rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.finishFooter {
+  font-size: 0.5rem;
+  color: #858479;
+}

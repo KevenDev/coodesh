@@ -5,6 +5,8 @@ import style from "./MoreInformation.module.css";
 import arrowInput from "../../../../public/assets/arrowInput.svg";
 import { Lato } from "next/font/google";
 import CarouselTestimonials from "./CarouselInformations";
+import marcusCooper from "../../../../public/assets/marcusCooper.svg";
+import lewisAmarante from "../../../../public/assets/lewisAmarante.svg";
 
 const lato = Lato({
   subsets: ["latin"],
@@ -52,6 +54,31 @@ const MoreInformations = () => {
           <h3>COMENTÁRIOS DE USUÁRIOS</h3>
         </div>
         <CarouselTestimonials />
+        <div className={style.containerMoreCourses}>
+          <div className={style.titleMoreCourses}>
+            <h3> MÁS CURSOS</h3>
+          </div>
+          <div className={style.containerImages}>
+            <div className={style.images1Adjusts}>
+              <Image src={marcusCooper} alt="Marcus Cooper" />
+              <div className={style.names}>
+                <h3>MARCUS COOPER</h3>
+                <h4>
+                  ENSEÑA <span> PIRAGÜISMO </span>
+                </h4>
+              </div>
+            </div>
+            <div className={style.images2Adjusts}>
+              <Image src={lewisAmarante} alt="Lewis Amarante" />
+              <div className={style.names}>
+                <h3>LEWIS AMARANTE</h3>
+                <h4>
+                  ENSEÑA <span> MAQUILLAJE </span>
+                </h4>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );

@@ -16,7 +16,10 @@ const Highlights = () => {
     <>
       <div className={style.containerHighlights}>
         <div className={style.title}>
-          <p>DESTAQUES DEL CURSO</p>
+          <h3>DESTAQUES DEL CURSO</h3>
+        </div>
+        <div className={style.titleDesktop}>
+          <h2>LESSON PLAN</h2>
         </div>
         <div className={style.courses}>
           <div className={style.courseInfo}>
@@ -43,9 +46,79 @@ const Highlights = () => {
             <Image src={iconArrow} alt="arrow" />
           </div>
           <span className={style.lineDetails}></span>
-          <div className={style.buttonSeePrograms}>
-            <button className={lato.className}>VER PROGRAMA COMPLETO</button>
+        </div>
+        <div className={style.coursesDesktop}>
+          <div className={style.courseInfoDesktop}>
+            <div>
+              <span>01</span>
+            </div>
+            <div className={style.contentDesktop}>
+              <h3>PRESENTACIÓN</h3>
+              <p>
+                Mireia, nuestra campeona, te da la bienvenida al curso que te
+                llevará a la cima de la natación. Conocerás su técnica, su
+                entrenamiento y muchas cosas más de la mano de un equipo de
+                profesionales de fama internacional.
+              </p>
+            </div>
           </div>
+          <span className={style.lineDetails}></span>
+          <div>
+            <div>
+              <span>02</span>
+            </div>
+            <div>
+              <h3>NATACIÓN: ASPECTOS GENERALES</h3>
+              <p>
+                Mireia es una luchadora. Su afán de superación y su preparación
+                tanto física como mental la han llevado a lo más alto en un
+                deporte que para ella es un estilo de vida. Conoce de la mano de
+                nuestra deportista de élite los beneficios de esta disciplina.
+              </p>
+            </div>
+          </div>
+          <span className={style.lineDetails}></span>
+          <div>
+            <div>
+              <span>03</span>
+            </div>
+            <div>
+              <h3>BASES BIOMECÁNICAS DE LA NATACIÓN</h3>
+              <p>
+                Mireia es una luchadora. Su afán de superación y su preparación
+                tanto física como mental la han llevado a lo más alto en un
+                deporte que para ella es un estilo de vida. Conoce de la mano de
+                nuestra deportista de élite los beneficios de esta disciplina.
+              </p>
+            </div>
+          </div>
+          <span className={style.lineDetails}></span>
+          <div>
+            <div>
+              <span>04</span>
+            </div>
+            <div>
+              <h3>ESTILOS DE NATACIÓN</h3>
+              <p>
+                Una perfecta ejecución de estos estilos, unida al control y a la
+                resistencia, te permitirá convertirte en un nadador
+                interdisciplinar. Mireia y su equipo te enseñarán las claves y
+                los secretos para dominarlos todos desde cero.
+              </p>
+            </div>
+          </div>
+          <span className={style.lineDetails}></span>
+          <div>
+            <div>
+              <span>05</span>
+            </div>
+            <div>
+              <h3>VIRAJES Y SALTOS</h3>
+            </div>
+          </div>
+        </div>
+        <div className={style.buttonSeePrograms}>
+          <button className={lato.className}>VER PROGRAMA COMPLETO</button>
         </div>
         <div className={style.containerStar}>
           <div className={style.classification}>

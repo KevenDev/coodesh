@@ -1,6 +1,7 @@
 "use client";
 import style from "./Informacoes.module.css";
 import Image from "next/image";
+
 import iconBook from "../../../../public/assets/iconBook.svg";
 import iconFilm from "../../../../public/assets/iconFilm.svg";
 import iconEbook from "../../../../public/assets/iconEbooks.svg";
@@ -9,6 +10,7 @@ import iconCheck from "../../../../public/assets/iconCheck.svg";
 import iconPencil from "../../../../public/assets/iconPencil.svg";
 import { Lato } from "next/font/google";
 import Carousel from "./Carousel";
+import CarouselDesktop from "./CarouselDesktop";
 
 const lato = Lato({
   subsets: ["latin"],
@@ -19,17 +21,24 @@ const InformationsHero = () => {
   return (
     <>
       <div className={style.containerInformation}>
-        <div className={style.buttonInformation}>
-          <button className={lato.className}>SOLICITAR INFORMACIÓN</button>
-        </div>
-        <div className={style.icons}>
-          <div className={style.informationsIcon}>
-            <Image alt="book" src={iconBook} />
-            <span>12 MÓDULOS</span>
+        <div className={style.containerDesktop}>
+          <div className={style.buttonInformation}>
+            <button className={lato.className}>SOLICITAR INFORMACIÓN</button>
           </div>
-          <div className={style.informationsIcon}>
-            <Image alt="video" src={iconFilm} />
-            <span>+3,5 HORAS</span>
+          <div className={style.buttonInformationDesktop}>
+            <button className={lato.className}>MAS INFORMACIÓN</button>
+          </div>
+          <div className={style.icons}>
+            <div className={style.informationsIcon}>
+              <Image alt="book" src={iconBook} />
+              <span>12 MÓDULOS</span>
+            </div>
+            <div className={style.icon2}>
+              <div className={style.informationsIcon}>
+                <Image alt="video" src={iconFilm} />
+                <span>+3,5 HORAS</span>
+              </div>
+            </div>
           </div>
         </div>
         <div className={style.textInformation}>
@@ -51,7 +60,11 @@ const InformationsHero = () => {
             </span>
           </div>
         </div>
+        <CarouselDesktop />
         <Carousel />
+        <div className={style.titleDesktop}>
+          <h2>CONTENIDO EXCLUSIVO</h2>
+        </div>
         <div className={style.iconsSucess}>
           <div className={style.iconSettings}>
             <Image alt="book" src={iconEbook} />
@@ -69,6 +82,9 @@ const InformationsHero = () => {
             <Image alt="pencil" src={iconPencil} />
             <span>Tareas</span>
           </div>
+        </div>
+        <div className={style.buttonInformationDesktop2}>
+          <button className={lato.className}>MAS INFORMACIÓN</button>
         </div>
       </div>
     </>

@@ -1,0 +1,87 @@
+.carouselDesktop {
+  display: none;
+  @media (min-width: 1024px) {
+    display: grid;
+    margin-top: 2.5rem;
+    width: 80vw;
+    color: white;
+    height: 20rem;
+    justify-content: center;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.carouselHeroImage img {
+  @media (min-width: 1024px) {
+    width: 100%;
+    height: 20rem;
+    transition: opacity 0.5s ease;
+  }
+}
+
+.carouselInformations {
+  @media (min-width: 1024px) {
+    background-color: white;
+
+    height: 20rem;
+  }
+}
+
+.titleCarousel h2 {
+  @media (min-width: 1024px) {
+    font-size: 1.75rem;
+    color: #1d1a05;
+    font-weight: 400;
+  }
+}
+
+.wrapperCarousel {
+  @media (min-width: 1024px) {
+    padding: 1.69875rem 2.43875rem 0 2.625rem;
+  }
+}
+
+.contentCarousel {
+  @media (min-width: 1024px) {
+    margin-top: 0.5rem;
+  }
+}
+
+.contentCarousel p {
+  @media (min-width: 1024px) {
+    color: #858479;
+  }
+}
+
+.carouselImages {
+  @media (min-width: 1024px) {
+    display: flex;
+    height: 6.8125rem;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+    gap: 2rem;
+  }
+}
+
+.carouselImages img {
+  @media (min-width: 1024px) {
+    width: 100%;
+  }
+}
+
+.imageAdjusts {
+  @media (min-width: 768px) {
+    display: flex;
+    cursor: pointer;
+    flex-direction: column;
+  }
+}
+
+.imageAdjusts span {
+  @media (min-width: 1024px) {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-align: center;
+    color: black;
+  }
+}

@@ -57,6 +57,7 @@
   justify-content: center;
   align-items: center;
   font-size: 1.25rem;
+  font-weight: 400;
   gap: 0.5rem;
   letter-spacing: 0.1rem;
   @media (min-width: 1024px) {

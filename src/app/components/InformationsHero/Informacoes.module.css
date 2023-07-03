@@ -5,6 +5,16 @@
   align-items: center;
 }
 
+.containerDesktop {
+  @media (min-width: 1024px) {
+    width: 80vw;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
 .buttonInformation {
   display: flex;
   justify-content: center;
@@ -14,7 +24,10 @@
   border-radius: 5px;
   margin-top: 0.625rem;
   cursor: pointer;
-  width: 95%;
+  width: 95vw;
+  @media (min-width: 1024px) {
+    display: none;
+  }
 }
 
 .buttonInformation button {
@@ -26,17 +39,70 @@
   letter-spacing: 1px;
 }
 
+.buttonInformationDesktop {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+  background-color: #c5af19;
+  border-radius: 5px;
+  margin-top: 0.625rem;
+  cursor: pointer;
+  width: auto;
+
+  @media (min-width: 1024px) {
+    display: flex;
+    height: 2.5rem;
+    width: 300px;
+  }
+
+  @media (min-width: 1440px) {
+    width: 368px;
+    height: 3rem;
+  }
+}
+
+.buttonInformationDesktop button {
+  border: none;
+  color: white;
+  font-size: 0.75rem;
+  width: 368px;
+  font-weight: 700;
+  background: transparent;
+  letter-spacing: 1px;
+
+  @media (min-width: 1440px) {
+    font-size: 1rem;
+  }
+}
+
 .icons {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 2rem;
   margin-top: 1.5rem;
+  @media (min-width: 1024px) {
+    margin-top: 0;
+  }
 }
 
 .icons img {
   width: 3rem;
   height: 3rem;
+  @media (min-width: 1440px) {
+    width: 5rem;
+    height: 5rem;
+  }
+}
+
+.icon2 {
+  @media (min-width: 1024px) {
+    position: absolute;
+    width: 80vw;
+    left: 40%;
+    transform: translateX(-40%);
+  }
 }
 
 .informationsIcon {
@@ -44,6 +110,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  @media (min-width: 1024px) {
+    flex-direction: row;
+    gap: 1rem;
+  }
 }
 
 .informationsIcon :nth-child(2) {
@@ -51,6 +121,9 @@
   font-size: 0.75rem;
   margin-top: 0.5rem;
   text-align: center;
+  @media (min-width: 1440px) {
+    font-size: 1.25rem;
+  }
 }
 
 .textInformation {
@@ -58,6 +131,10 @@
   text-align: center;
   margin-top: 2rem;
   color: white;
+
+  @media (min-width: 1024px) {
+    display: none;
+  }
 }
 
 .buttonQuestions {
@@ -71,6 +148,9 @@
   margin-top: 2.5rem;
   cursor: pointer;
   width: 95%;
+  @media (min-width: 1024px) {
+    display: none;
+  }
 }
 
 .buttonQuestions button {
@@ -87,6 +167,10 @@
   margin-top: 2.5rem;
   color: white;
   width: 90%;
+
+  @media (min-width: 1024px) {
+    display: none;
+  }
 }
 
 .textAppeal :nth-child(2) {
@@ -101,6 +185,11 @@
   width: 95%;
   padding: 1rem;
   justify-content: space-between;
+  @media (min-width: 1024px) {
+    justify-content: center;
+
+    gap: 7rem;
+  }
 }
 
 .iconSettings {
@@ -113,6 +202,10 @@
 .iconSettings img {
   width: 2rem;
   height: 2rem;
+  @media (min-width: 1440px) {
+    width: 3.05rem;
+    height: 3.43125rem;
+  }
 }
 
 .iconSettings span {
@@ -120,4 +213,47 @@
   text-align: center;
   margin-top: 0.3rem;
   color: white;
+  @media (min-width: 1440px) {
+    font-size: 1.25rem;
+  }
+}
+
+.titleDesktop h2 {
+  @media (min-width: 1024px) {
+    font-size: 1.75rem;
+    color: #d8d7ce;
+    letter-spacing: 2px;
+    font-weight: 400;
+    margin-top: 2.5rem;
+  }
+}
+
+.buttonInformationDesktop2 {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+  background-color: #c5af19;
+  border-radius: 5px;
+  margin-top: 0.625rem;
+  cursor: pointer;
+  width: auto;
+  @media (min-width: 1024px) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.buttonInformationDesktop2 button {
+  border: none;
+  color: white;
+  font-size: 0.75rem;
+  width: 368px;
+  font-weight: 700;
+  background: transparent;
+  letter-spacing: 1px;
+
+  @media (min-width: 1440px) {
+    font-size: 1rem;
+  }
 }
